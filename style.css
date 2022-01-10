@@ -1,9 +1,18 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: sans-serif;
+    /*font-family: sans-serif;*/
+    /*max-width: 2100px;
+    margin: 0 auto;*/
 }
 
+/*.container {
+    background-color: hsl(203, 90%, 12%);
+    max-width: 2100px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+*/
 .header {
     position: relative;
     width: 100%;
@@ -45,19 +54,25 @@
     color: red;
 }
 
+.detail {
+    width: 100%;
+    border-width: 300px 50em 10px 50rem;
+}
+
 .detail hr {
     border: solid rgb(48, 48, 48);
-    /*border: solid rgb(131, 34, 34);*/
-    border-width: 300px 100em 10px 50rem;
+    border-width: 25px 75.1em 10px 50rem;
     position: absolute;
-    top: 55%;
+    top: 83%;
+    margin-top: 50px;
+    margin-bottom: 50px
 }
 
 .detail .info .above hr {
     border: solid rgb(219, 219, 219);
     border-width: 1px 35em 1px 10rem;
     position: absolute;
-    top: 105%;
+    top: 80%;
 }
 
 .detail .bgabove .background {
@@ -68,10 +83,11 @@
 }
 
 .detail .bgabove .mainpic {
-    width: 25%;
+    max-width: 380px;
+    width: 100%;
     position: absolute;
     left: 14%;
-    top: 30%;
+    top: 36%;
     z-index: 1;
     border: 1rem solid rgb(68, 67, 67);
 }
@@ -79,11 +95,12 @@
 
 .detail .info .above {
     position: absolute;
-    right: 25%;
-    top: 57%;
+    right: 15%;
+    top: 72%;
     z-index: 1;
     color: wheat;
     font-size:25px;
+    line-height:10%;
 }
 
 .detail .info .botton .bgbotton {
@@ -95,13 +112,13 @@
 
 .detail .info .botton p {
     position: absolute;
-    left: 40%;
-    right: 9%;
-    top: 75%;
+    right: 15%;
+    left: 41%;
+    top: 95%;
     z-index: 1;
     color: rgb(255, 242, 172);
     font-size: 20px;
-    text-align: center;
+
 }
 
 
@@ -112,7 +129,14 @@
     font-size: 25px;
     position: absolute;
     z-index: 2;
-    bottom: -37%;
+    top: 175%;
     left: 40%;
     
+}
+
+@media (max-width: 600px) {
+    nav, article {
+        width: 100%;
+        height: auto;
+    }
 }
